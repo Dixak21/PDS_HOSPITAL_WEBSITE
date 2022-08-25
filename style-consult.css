@@ -1,0 +1,205 @@
+ /*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+ /* 
+    Created on : Apr 23, 2021, 10:52:55 AM
+    Author     : GWeb Solution PC 1
+*/
+ 
+/*nav{
+    background:#2da3fd ;
+    height: 80px;
+    width: 100%;
+ }
+
+ label.logo{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+
+ }*/
+ section{
+    float: left;
+    position: relative;
+    padding: 30px 13px;
+    background: #fcfcfd;
+    z-index: 1;
+    width: 100%;
+ }
+ .header{
+    height: 80px;
+    width: 100%;
+    padding:2rem 9%;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.header .logo i{
+    color: var(--green);
+}
+
+.header .navbar a{
+text-transform: uppercase;
+  font-size: 18px;
+  color: var(--light-color);
+  margin-left: 1rem;
+}
+
+.header .navbar a:hover{
+    color: var(--green);
+}
+
+#menu-btn{
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color:var(--green);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width:446px){
+    .header .logo{
+        font-size: 20px;
+    }
+    #menu-btn{
+        font-size: 20px;
+
+    }
+    
+}
+@media (max-width:1148px){
+
+    #menu-btn{
+        display: initial;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:115%; right: 2rem;
+        border-radius: .5rem;
+        box-shadow: var(--box-shadow);
+        width: 30rem;
+        border: var(--border);
+        background: #fff;
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: none;
+    }
+
+    .header .navbar.active{
+        transform: scale(1);
+        opacity: 1;
+        transition: .2s ease-out;
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+        display: block;
+        margin:2.5rem;
+    }
+
+}
+#addhos {
+  padding: 1rem 3rem;
+  background: #2da3fd;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid white;
+  font-size: 13px;
+}
+
+ .emergency {
+     position: absolute;
+     bottom: 27px;
+     z-index: 1;
+     background: #50c3ef;
+     color: #fff;
+     text-align: center;
+     width: 100%;
+ }
+
+ .appoinment-content {
+     position: relative;
+     background-color: rgb(71, 71, 247);
+ }
+
+ .appoinment-content img {
+     width: 100%;
+  }
+
+ .btn-main {
+     background: #50c3ef;
+ }
+
+ .error {
+     background: yellow;
+     color: red;
+     padding: 5px;
+ }
+
+ .success {
+     background: #50c3ef;
+     color: #fff;
+     padding: 5px;
+ }
+ .footer .box-container{
+    text-transform: capitalize;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    gap:2rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 27px;
+    color:var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 18px;
+    color:var(--light-color);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color:var(--green);
+}
+
+.footer .box-container .box a:hover i{
+    padding-right:2rem;
+}
+
+.footer .credit{
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color:var(--light-color);
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.footer .credit span{
+    color:var(--green);
+}
+ 
+ /*jquery  ui datepicker*/
